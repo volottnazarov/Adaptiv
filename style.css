@@ -1,0 +1,201 @@
+﻿.lato-bold {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 32px;
+    color: #222;
+}
+.lato-black {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 48px;
+    color: #222;
+}
+.lato-regular {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    color: #222;
+}
+.lato-reg400 {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: rgb(93, 93, 93);
+}
+.lato13 {
+    font-family: "Lato", sans-serif;
+    font-weight: bold 400;
+    font-style: normal;
+    font-size: 13px;
+    color: #222;
+}
+.lato16 {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: rgb(242, 99, 118)
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.menu {
+    width: 1600px;
+    height: 75px;
+    background: rgb(34, 34, 34);
+}
+.nav {
+    height: 75px;
+    padding-left: 240px;
+    padding-right: 231px;
+    display: flex;
+    justify-content: space-between;
+}
+.logoSearch {
+    width: 111px;
+    height: 38px;
+    padding-top: 19px;
+}
+.logo {
+    width: 44px;
+    height: 38px;
+    padding-bottom: 19px;
+}
+.svg {
+    fill: #e8e8e8;
+    width: 26px;
+    height: 26.79px;
+    padding-left: 37px;
+    padding-bottom: 19px;
+}
+.userMenu {
+    width: 159px;
+    height: 29px;
+    padding-top: 26px;
+}
+.main {
+    width: 1600px;
+    height: 764px;
+    background: rgb(241, 228, 230);
+    display: flex;
+    flex-direction: row;
+}
+.mainFlex {
+    width: 800px;
+    height: 764px;
+}
+.title {
+    width: 405px;
+    height: 93px;
+    padding-top: 289.9px;
+    padding-left: 63.42px;
+    display: flex;
+    flex-direction: row;
+}
+.rect {
+    width: 12px;
+    height: 93px;
+    fill: #f16d7f;
+}
+.textTitle {
+    width: 377px;
+    height: 93px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 16px;
+}
+.brand {
+    text-align: start;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.subBrand {
+    display: flex;
+    flex-direction: row;
+    height: 34px;
+    text-align: start;
+}
+.colorP {
+    color: #f16d7f;
+}
+.section {
+    height: 470px;
+    margin-left: 230px;
+    margin-top: 65px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.categories {
+    width: 1140px;
+    height: 260px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.imgCat {
+    width: 360px;
+    height: 260px;
+}
+.accses {
+    height: 180px;
+}
+.cardSect {
+    height: 1395px;
+    margin-left: 230px;
+    margin-top: 96px;
+    margin-bottom: 60px;
+}
+.cardH1 {
+    text-align: center;
+}
+.cardH2 {
+    text-align: center;
+    margin-top: 6px;
+}
+.cards {
+    padding-top: 48px;
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    gap: 30px;
+}
+.card {
+    width: 360px;
+    height: 587px;
+}
+.nameCard {
+    margin-top: 24.35px;
+    margin-left: 16.46px;
+}
+.description {
+    margin-top: 12.65px;
+    margin-left: 16.46px;
+}
+.price {
+    margin-top: 18px;
+    margin-left: 16.46px;
+}
+.backGr {
+    background: rgb(248, 248, 248);
+}
+.browse {
+    text-align: center;
+    height: 19px;
+    margin-top: 63px;
+    margin-bottom: 74px;
+
+}
