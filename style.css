@@ -155,7 +155,6 @@ body {
     gap: 30px;
 }
 .categories {
-    width: 1140px;
     height: 260px;
     display: flex;
     flex-direction: row;
@@ -200,7 +199,7 @@ body {
 .textCenter {
     text-align: center;
 }
-.accses {
+.acces {
     height: 180px;
 }
 .cardSect {
@@ -251,9 +250,114 @@ body {
     margin-left: 465px;
     margin-top: 48px;
     margin-bottom: 60px;
-    border: 2px solid #FF6A6A;
+    border: 1px solid #FF6A6A;
     background: #FFFFFF;
 }
 .btn {
     cursor: pointer;
+}
+@media(min-width: 768px) and (max-width: 1600px){
+    .container {
+        max-width: 735px;
+    }
+    .menu {
+        width: 768px;
+        height: 74px;
+    }
+    .nav {
+        height: 74px;
+        padding-left: 32px;
+        padding-right: 36px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .logoSearch {
+        padding-top: 18px;
+    }
+    .userMenu {
+        padding-top: 19px;
+    }
+    .main {
+        width: 768px;
+        height: 367.57px;
+    }
+    .mainFlex {
+        width: 384px;
+        height: 368px;
+    }
+    .title {
+        width: 311px;
+        height: 92px;
+        padding-top: 138px;
+        padding-left: 39px;
+    }
+    .lato-bold {
+        font-size: 24px;
+    }
+    .lato-black {
+        font-size: 44px;
+    }
+    .section {
+        height: 303.04px;
+        margin-left: 16px;
+        margin-top: 65px;
+        gap: 20px;
+    }
+    .categories {
+        height: 167.62px;
+        gap: 20px;
+    }
+    .imgCat {
+        width: 231.6px;
+        height: 167.62px;
+    }
+    .acces {
+        height: 116.04px;
+    }
+    .text {
+        position: absolute;
+        width: 153.93px;
+        height: 50px;
+        left: 55.34px;
+        top: 566px;
+    }
+    .text_2 {
+        position: absolute;
+        width: 109.95px;
+        height: 50px;
+        left: 329.2px;
+        top: 564px;
+    }
+    .text_3 {
+        position: absolute;
+        width: 114.94px;
+        height: 50px;
+        left: 578.08px;
+        top: 565px;
+    }
+    .text_4 {
+        position: absolute;
+        width: 159.92px;
+        height: 50px;
+        left: 304.22px;
+        top: 727px;
+    }
+    .cardSect {
+        height: 2980px;
+        margin-left: 16px;
+        margin-top: 109px;
+        margin-bottom: 60px;
+    }
+    .cardH2 {
+        margin-top: 3.3px;
+    }
+    .cards {
+        padding-top: 73.74px;
+        grid-template-columns: repeat(2, 3fr);
+    }
+    .border {
+        margin-left: 278px;
+        margin-top: 32.48px;
+        margin-bottom: 70.52px;
+    }
 }
