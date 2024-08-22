@@ -1,4 +1,8 @@
-﻿.lato-bold {
+﻿@font-face {
+    font-family: "Lato";
+    src: url();
+}
+.lato-bold {
     font-family: "Lato", sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -58,6 +62,9 @@ img {
 }
 body {
     scroll-behavior: smooth;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 .container{
     max-width: 1140px;
@@ -148,7 +155,6 @@ body {
 }
 .section {
     height: 470px;
-    margin-left: 230px;
     margin-top: 65px;
     display: flex;
     flex-direction: column;
@@ -164,33 +170,39 @@ body {
     width: 360px;
     height: 260px;
 }
+.cat_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./img/Group\ 36.png);
+}
+.cat_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./img/Group\ 37.png);
+}
+.cat_3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./img/Group\ 38.png);
+}
 .text {
-    position: absolute;
     width: 154px;
     height: 50px;
-    left: 333px;
-    top: 1009px;
 }
 .text_2 {
-    position: absolute;
     width: 110px;
     height: 50px;
-    left: 745px;
-    top: 1009px;
 }
 .text_3 {
-    position: absolute;
     width: 115px;
     height: 50px;
-    left: 1133px;
-    top: 1009px;
 }
 .text_4 {
-    position: absolute;
     width: 159.72px;
     height: 50px;
-    left: 721.14px;
-    top: 1259px;
 }
 .info {
     text-align: center;
@@ -200,11 +212,15 @@ body {
     text-align: center;
 }
 .acces {
+    width: 1140px;
     height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./img/Group\ 39.png);
 }
 .cardSect {
     height: 1395px;
-    margin-left: 230px;
     margin-top: 96px;
     margin-bottom: 60px;
 }
@@ -219,10 +235,10 @@ body {
     padding-top: 48px;
     display: grid;
     grid-template-columns: repeat(3, 3fr);
-    gap: 30px;
+    gap: 18px;
 }
 .card {
-    width: 360px;
+    width: 358px;
     height: 587px;
 }
 .nameCard {
@@ -241,15 +257,20 @@ body {
     background: rgb(248, 248, 248);
 }
 .browse {
-    text-align: center;
     height: 19px;
+    padding: 10px;
+}
+.btnDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .border {
     width: 212px;
     height: 48px;
-    margin-left: 465px;
     margin-top: 48px;
     margin-bottom: 60px;
+    text-align: center;
     border: 1px solid #FF6A6A;
     background: #FFFFFF;
 }
@@ -291,6 +312,10 @@ body {
         padding-top: 138px;
         padding-left: 39px;
     }
+    .textTitle {
+        width: 283px;
+        height: 78px;
+    }
     .lato-bold {
         font-size: 24px;
     }
@@ -299,7 +324,6 @@ body {
     }
     .section {
         height: 303.04px;
-        margin-left: 16px;
         margin-top: 65px;
         gap: 20px;
     }
@@ -312,41 +336,12 @@ body {
         height: 167.62px;
     }
     .acces {
+        width: 735px;
         height: 116.04px;
     }
-    .text {
-        position: absolute;
-        width: 153.93px;
-        height: 50px;
-        left: 55.34px;
-        top: 566px;
-    }
-    .text_2 {
-        position: absolute;
-        width: 109.95px;
-        height: 50px;
-        left: 329.2px;
-        top: 564px;
-    }
-    .text_3 {
-        position: absolute;
-        width: 114.94px;
-        height: 50px;
-        left: 578.08px;
-        top: 565px;
-    }
-    .text_4 {
-        position: absolute;
-        width: 159.92px;
-        height: 50px;
-        left: 304.22px;
-        top: 727px;
-    }
     .cardSect {
-        height: 2980px;
-        margin-left: 16px;
+        height: 2060px;
         margin-top: 109px;
-        margin-bottom: 60px;
     }
     .cardH2 {
         margin-top: 3.3px;
@@ -356,8 +351,6 @@ body {
         grid-template-columns: repeat(2, 3fr);
     }
     .border {
-        margin-left: 278px;
         margin-top: 32.48px;
-        margin-bottom: 70.52px;
     }
 }
