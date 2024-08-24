@@ -354,3 +354,102 @@ body {
         margin-top: 32.48px;
     }
 }
+@media (max-width: 767px){
+    .container {
+        max-width: 375px;
+    }
+    .menu {
+        width: 375px;
+        height: 74px;
+    }
+    .nav {
+        height: 74px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .userMenu {
+        width: 32px;
+        height: 23px;
+        padding-top: 25px;
+    }
+    .butMobile_2 {
+        display: none;
+    }
+    .butMobile_3 {
+        display: none;
+    }
+    .main {
+        width: 375px;
+        height: 363px;
+    }
+    .mainFlex {
+        width: 375px;
+        height: 363px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .flexMobile {
+        display: none;
+    }
+    .title {
+        width: 263px;
+        height: 66px;
+        padding: 0;
+    }
+    .rect {
+        width: 12px;
+        height: 61px;
+    }
+    .textTitle {
+        width: 236px;
+        height: 66px;
+        padding-left: 15px;
+    }
+    .brand {
+        text-align: start;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .subBrand {
+        height: 26px;
+    }
+    .lato-black {
+        font-size: 38px;
+        line-height: 38px;
+    }
+    .lato-bold {
+        font-size: 20px;
+    }
+    .section {
+        height: 951px;
+        margin-top: 65px;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+    .categories {
+        height: 808px;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+    .imgCat {
+        width: 375px;
+    }
+    .acces {
+        width: 375px;
+        height: 111px;
+    }
+    .cards {
+        padding-top: 48px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .card {
+        width: 360px;
+        height: 587px;
+    }
+
+}
