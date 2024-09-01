@@ -30,12 +30,42 @@
     font-size: 14px;
     color: rgb(93, 93, 93);
 }
-.lato13 {
+.lato14 {
+    color: rgb(34, 34, 36);
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+}
+.lato14_white {
+    color: rgb(255, 255, 255);
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+}
+.lato14_burger {
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(111, 110, 110);
+}
+.lato_burger-red {
+    color: rgb(241, 109, 127);
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+}
+.lato13_bold {
     font-family: "Lato", sans-serif;
     font-weight: bold 400;
     font-style: normal;
     font-size: 13px;
     color: #222;
+}
+.lato13 {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
 }
 .lato16 {
     font-family: "Lato", sans-serif;
@@ -44,12 +74,61 @@
     font-size: 16px;
     color: rgb(242, 99, 118)
 }
+.lato16-white {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: white;
+}
 .lato24 {
     font-family: "Lato", sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 24px;
     color: #f16d7f;
+}
+.lato24_black {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 167%;
+    color:  #222224;
+}
+.lato19 {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 19px;
+    line-height: 44px;
+}
+.lato20 {
+    font-family: Lato;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+}
+.lato18 {
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    color: rgb(34, 34, 36);
+}
+.lato12 {
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 12px;
+    color: #fff;
+}
+.lato14_black {
+    font-family: Lato;
+    font-weight: 700;
+    font-size: 14px;
+    color: #000;
 }
 img {
     display: block;
@@ -103,10 +182,24 @@ body {
 }
 .userMenu {
     width: 159px;
-    height: 29px;
-    padding-top: 26px;
+    height: 42px;
+    padding-top: 16px;
     display: flex;
     justify-content: space-between;
+    transition: all 0.5s;
+}
+.butMobile_1:active {
+    transform: rotate(30deg);
+}
+.cart_active {
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    padding-left: 148px;
+}
+.cart_active-score {
+    position: absolute;
+    padding-left: 155px;
 }
 .main {
     width: 1600px;
@@ -131,6 +224,46 @@ body {
     width: 12px;
     height: 93px;
     fill: #f16d7f;
+}
+.burger_menu {
+    position: absolute;
+    display: none;
+    left: 1516px;
+    width: 230px;
+    height: 634px;
+    background: rgb(255, 255, 255);
+    border-right: 2px solid rgb(241, 228, 230);
+    display: flex;
+    flex-direction: column;
+}
+.burger_menu__title-menu {
+    padding-left: 33px;
+    padding-top: 32px;
+}
+.burger_menu__man {
+    width: 100.9px;
+    height: 150px;
+    padding-top: 24px;
+    padding-left: 32px;
+}
+.burger_menu__woman {
+    width: 126px;
+    height: 163px;
+    padding-top: 20px;
+    padding-left: 32px;
+}
+.burger_menu__kids {
+    width: 126px;
+    height: 196px;
+    padding-top: 20px;
+    padding-left: 32px;
+}
+.burger_menu__categories {
+    padding-top: 20px;
+    padding-left: 21.5px;
+}
+.burger_menu-links {
+    line-height: 28px;
 }
 .textTitle {
     width: 377px;
@@ -222,7 +355,6 @@ body {
 .cardSect {
     height: 1395px;
     margin-top: 96px;
-    margin-bottom: 60px;
 }
 .cardH1 {
     text-align: center;
@@ -241,6 +373,43 @@ body {
     width: 358px;
     height: 587px;
 }
+.cards__img {
+    position: relative;
+}
+.dark {
+    background: rgba(58, 56, 56, 0.86);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.dark_pos-top {
+    position: absolute;
+    top: 1576px;
+    width: 360px;
+    height: 420px;
+}
+.dark_pos-bottom {
+    position: absolute;
+    top: 2182px;
+    width: 360px;
+    height: 420px;
+}
+.button_sale {
+    width: 139px;
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 13px;
+    padding-right: 13px;
+    align-items: center;
+    border: 1px solid #e8e8e8;
+    background: rgba(58, 56, 56, 0.86);
+}
+.cards__img:hover~.dark{
+    display: flex;
+}
 .nameCard {
     margin-top: 24.35px;
     margin-left: 16.46px;
@@ -256,9 +425,10 @@ body {
 .backGr {
     background: rgb(248, 248, 248);
 }
-.browse {
+.browse-button {
     height: 19px;
-    padding: 10px;
+    padding-top: 14px;
+    padding-left: 35px;
 }
 .btnDiv {
     display: flex;
@@ -266,6 +436,7 @@ body {
     align-items: center;
 }
 .border {
+    position: relative;
     width: 212px;
     height: 48px;
     margin-top: 48px;
@@ -274,9 +445,164 @@ body {
     border: 1px solid #FF6A6A;
     background: #FFFFFF;
 }
+.border-none {
+    position: absolute;
+    width: 212px;
+    height: 48px;
+    margin-top: 48px;
+    margin-bottom: 60px;
+    text-align: center;
+    border: 1px solid #FFFFFF;
+    background: rgb(241, 109, 127);
+    display: none;
+}
+.border:hover~.border-none{
+    display: flex;
+}
 .btn {
     cursor: pointer;
 }
+.footer {
+    width: 1600px;
+    margin-top: 95px;
+    display: flex;
+    flex-direction: column;
+    background: rgb(34, 34, 36);
+}
+.footer__menu {
+    height: 341px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.footer__menu-flex {
+    width: 360px;
+    height: 134px;
+    margin-top: 103px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer__menu-pos {
+    text-align: center;
+    line-height: 16px;
+    color: #fbfbfb;
+}
+.truck {
+    width: 45px;
+    height: 32px;
+    margin-bottom: 20px;
+}
+.sales {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 13px;
+}
+.queen {
+    width: 47px;
+    height: 35px;
+    margin-bottom: 18px;
+}
+.footer__subscribe {
+    width: 1600px;
+    height: 448px;
+    display: flex;
+    align-items: center;
+    background-image: url(./img/photo\ subscribe.png);
+}
+.footer__subscribe-pos {
+    width: 1140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__avatar {
+    width: 360px;
+    height: 225px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer__subscrb {
+    width: 557px;
+    height: 142px;
+    display: flex;
+    flex-direction: column;
+}
+.ava {
+    width: 96px;
+    height: 96px;
+}
+.textScrb {
+    width: 557px;
+    height: 61px;
+    text-align: center;
+    color: #222224;
+}
+.enter {
+    width: 557px;
+    height: 49px;
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.enter__email {
+    position: relative;
+    width: 256px;
+    height: 49px;
+    background: rgb(225, 225, 225);
+    opacity: 0.6;
+    border-radius: 25px 0 0 25px;
+    border: none;
+}
+.enter_you-email {
+    position: absolute;
+    width: 256px;
+    height: 49px;
+    left: 1020px;
+    margin-top: 16px;
+    color: rgb(34, 34, 36);
+}
+.enter_button {
+    width: 100px;
+    height: 49px;
+    border: none;
+    border-radius: 0 25px 25px 0;
+    background-color: rgb(241, 109, 127);
+}
+.footer__icons {
+    width: 1600px;
+    height: 79px;
+    background-color: #222224;
+}
+.footer__icons-pos {
+    height: 79px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 7.29px;
+    transition: transform 0.3s;
+}
+.footer__icons-brand {
+    height: 79px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 7.29px;
+    transition: transform 0.3s;
+}
+.footer__icons-link {
+    width: 32px;
+    height: 32px;
+}
+.footer__icons-link:hover {
+    transform: scale(1.15);
+    opacity: 0.5;
+    background-color: red;
+}
+
 @media(min-width: 768px) and (max-width: 1600px){
     .container {
         max-width: 735px;
@@ -311,6 +637,9 @@ body {
         height: 92px;
         padding-top: 138px;
         padding-left: 39px;
+    }
+    .burger_menu {
+        display: none;
     }
     .textTitle {
         width: 283px;
@@ -352,6 +681,50 @@ body {
     }
     .border {
         margin-top: 32.48px;
+    }
+    .footer {
+        width: 768px;
+        margin-top: 10px;
+    }
+    .footer__menu {
+        height: 610px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+    .footer__menu-flex {
+        width: 360px;
+        height: 134px;
+        margin-top: 48px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer__subscribe {
+        width: 768px;
+        height: 614px;
+        background-image: url(./img/photo\ subscribe_2.png);
+    }
+    .footer__subscribe-pos {
+        height: 614px;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer__subscrb {
+        height: 137px;
+    }
+    .footer__avatar {
+        padding-top: 64px;
+    }
+    .footer__subscrb {
+        padding-bottom: 120px;
+    }
+    .enter_you-email {
+        left: 150px;
+        margin-top: 16px;
+    }
+    .footer__icons {
+        width: 768px;
     }
 }
 @media (max-width: 767px){
@@ -441,6 +814,10 @@ body {
         width: 375px;
         height: 111px;
     }
+    .cardSect {
+        height: 3800px;
+        margin-top: 96px;
+    }
     .cards {
         padding-top: 48px;
         display: flex;
@@ -450,6 +827,90 @@ body {
     .card {
         width: 360px;
         height: 587px;
+    }
+    .footer {
+        width: 375px;
+        height: 1303px;
+    }
+    .footer__menu {
+        height: 610px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+    .footer__menu-flex {
+        width: 348px;
+        height: 129px;
+        margin-top: 48px;
+    }
+    .footer__subscribe {
+        width: 375px;
+        height: 550px;
+        background-image: url(./img/photo\ subscribe_3.png);
+    }
+    .footer__subscribe-pos {
+        width: 375px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer__avatar {
+        width: 343px;
+        height: 194px;
+    }
+    .footer__subscrb {
+        width: 341px;
+        height: 123px;
+        display: flex;
+        flex-direction: column;
+    }
+    .textScrb {
+        width: 341px;
+        height: 61px;
+        text-align: center;
+        color: #222224;
+    }
+    .enter {
+        width: 340px;
+        height: 47px;
+        margin-top: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .enter_button {
+        width: 95.79px;
+        height: 47px;
+    }
+    .footer__icons {
+        width: 375px;
+        height: 143px;
+    }
+    .footer__icons-brand {
+        height: 79px;
+        margin-top: 32px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 7.29px;
+        transition: transform 0.3s;
+    }
+    .enter__email {
+        position: relative;
+        width: 240px;
+        height: 49px;
+        background: rgb(225, 225, 225);
+        opacity: 0.6;
+        border-radius: 25px 0 0 25px;
+        border: none;
+    }
+    .enter_you-email {
+        position: absolute;
+        width: 200px;
+        height: 49px;
+        left: 0;
+        margin-top: 16px;
+        color: rgb(34, 34, 36);
     }
 
 }
