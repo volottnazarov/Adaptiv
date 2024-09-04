@@ -186,11 +186,11 @@ body {
     padding-top: 16px;
     display: flex;
     justify-content: space-between;
-    transition: all 0.5s;
 }
 .butMobile_1:active {
     transform: rotate(30deg);
 }
+
 .cart_active {
     position: absolute;
     width: 19px;
@@ -227,7 +227,6 @@ body {
 }
 .burger_menu {
     position: absolute;
-    display: none;
     left: 1516px;
     width: 230px;
     height: 634px;
@@ -236,9 +235,21 @@ body {
     display: flex;
     flex-direction: column;
 }
+.hidden {
+    display: none;
+}
+.burger_menu-close {
+    width: 32px;
+    height: 32px;
+    margin-left: 190px;
+    margin-top: 10px;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.3s;
+}
 .burger_menu__title-menu {
     padding-left: 33px;
-    padding-top: 32px;
 }
 .burger_menu__man {
     width: 100.9px;
@@ -255,7 +266,7 @@ body {
 .burger_menu__kids {
     width: 126px;
     height: 196px;
-    padding-top: 20px;
+    padding-top: 10px;
     padding-left: 32px;
 }
 .burger_menu__categories {
@@ -373,27 +384,33 @@ body {
     width: 358px;
     height: 587px;
 }
+.backGr {
+    background: rgb(248, 248, 248);
+    z-index: 1;
+}
 .cards__img {
     position: relative;
+    z-index: 2;
 }
 .dark {
     background: rgba(58, 56, 56, 0.86);
     display: flex;
     justify-content: center;
     align-items: center;
-    display: none;
 }
 .dark_pos-top {
     position: absolute;
-    top: 1576px;
-    width: 360px;
-    height: 420px;
+    top: 1577px;
+    width: 358px;
+    height: 418px;
+    z-index: 0;
 }
 .dark_pos-bottom {
     position: absolute;
     top: 2182px;
-    width: 360px;
-    height: 420px;
+    width: 358px;
+    height: 418px;
+    z-index: 0;
 }
 .button_sale {
     width: 139px;
@@ -407,8 +424,9 @@ body {
     border: 1px solid #e8e8e8;
     background: rgba(58, 56, 56, 0.86);
 }
-.cards__img:hover~.dark{
-    display: flex;
+.cards__img:hover {
+    z-index: -3;
+    transition: all 0.5s;
 }
 .nameCard {
     margin-top: 24.35px;
@@ -422,13 +440,8 @@ body {
     margin-top: 18px;
     margin-left: 16.46px;
 }
-.backGr {
-    background: rgb(248, 248, 248);
-}
 .browse-button {
     height: 19px;
-    padding-top: 14px;
-    padding-left: 35px;
 }
 .btnDiv {
     display: flex;
@@ -442,6 +455,7 @@ body {
     margin-top: 48px;
     margin-bottom: 60px;
     text-align: center;
+    z-index: 2;
     border: 1px solid #FF6A6A;
     background: #FFFFFF;
 }
@@ -452,12 +466,13 @@ body {
     margin-top: 48px;
     margin-bottom: 60px;
     text-align: center;
+    z-index: -1;
     border: 1px solid #FFFFFF;
     background: rgb(241, 109, 127);
-    display: none;
 }
-.border:hover~.border-none{
-    display: flex;
+.border:hover {
+    z-index: -3;
+    transition: all 0.3s;
 }
 .btn {
     cursor: pointer;
@@ -551,11 +566,12 @@ body {
 .enter__email {
     position: relative;
     width: 256px;
-    height: 49px;
+    height: 50px;
     background: rgb(225, 225, 225);
     opacity: 0.6;
     border-radius: 25px 0 0 25px;
     border: none;
+    text-align: center;
 }
 .enter_you-email {
     position: absolute;
@@ -591,16 +607,39 @@ body {
     justify-content: space-between;
     align-items: center;
     gap: 7.29px;
-    transition: transform 0.3s;
 }
 .footer__icons-link {
+    position: relative;
     width: 32px;
     height: 32px;
+    z-index: 2;
+}
+.footer__icons-link-z1 {
+    position: absolute;
+    margin-top: 3px;
+    z-index: 1;
+}
+.footer__icons-link-z2 {
+    position: absolute;
+    height: 32px;
+    margin-left: 39px;
+    z-index: 1;
+}
+.footer__icons-link-z3 {
+    position: absolute;
+    margin-left: 79px;
+    margin-top: 3px;
+    z-index: 1;
+}
+.footer__icons-link-z4 {
+    position: absolute;
+    margin-left: 118px;
+    margin-top: 3px;
+    z-index: 1;
 }
 .footer__icons-link:hover {
-    transform: scale(1.15);
-    opacity: 0.5;
-    background-color: red;
+    z-index: 0;
+    transition: all 0.3s;
 }
 
 @media(min-width: 768px) and (max-width: 1600px){
@@ -639,7 +678,8 @@ body {
         padding-left: 39px;
     }
     .burger_menu {
-        display: none;
+        position: absolute;
+        left: 537px;
     }
     .textTitle {
         width: 283px;
@@ -679,8 +719,29 @@ body {
         padding-top: 73.74px;
         grid-template-columns: repeat(2, 3fr);
     }
+    .dark_pos-top {
+        position: absolute;
+        top: 1048px;
+        width: 357px;
+        height: 417px;
+        z-index: 0;
+    }
+    .dark_pos-bottom {
+        position: absolute;
+        top: 2259px;
+        width: 357px;
+        height: 417px;
+        z-index: 0;
+    }
+    .dark_pos-center {
+        position: absolute;
+        top: 1653px;
+        width: 357px;
+        height: 417px;
+        z-index: 0;
+    }
     .border {
-        margin-top: 32.48px;
+        margin-top: 48px;
     }
     .footer {
         width: 768px;
@@ -745,11 +806,22 @@ body {
         height: 23px;
         padding-top: 25px;
     }
+    .cart_active {
+        display: none;
+    }
+    .cart_active-score {
+        display: none;
+    }
     .butMobile_2 {
         display: none;
     }
     .butMobile_3 {
         display: none;
+    }
+    .burger_menu {
+        max-width: 375;
+        left: 135px;
+        height: 634px;
     }
     .main {
         width: 375px;
@@ -825,8 +897,39 @@ body {
         gap: 16px;
     }
     .card {
+        position: relative;
         width: 360px;
         height: 587px;
+    }
+    .dark_pos-1 {
+        position: absolute;
+        top: 0px;
+        left: 1px;
+    }
+    .dark_pos-2 {
+        position: absolute;
+        top: 0px;
+        left: 1px;
+    }
+    .dark_pos-3 {
+        position: absolute;
+        top: 1px;
+        left: 1px;
+    }
+    .dark_pos-4 {
+        position: absolute;
+        top: 1px;
+        left: 1px;
+    }
+    .dark_pos-5 {
+        position: absolute;
+        top: 0;
+        left: 1px;
+    }
+    .dark_pos-6 {
+        position: absolute;
+        top: 0;
+        left: 1px;
     }
     .footer {
         width: 375px;
@@ -850,6 +953,7 @@ body {
     }
     .footer__subscribe-pos {
         width: 375px;
+        height: 400px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -857,6 +961,9 @@ body {
     .footer__avatar {
         width: 343px;
         height: 194px;
+    }
+    .ava {
+        padding-bottom: 20px;
     }
     .footer__subscrb {
         width: 341px;
@@ -873,7 +980,7 @@ body {
     .enter {
         width: 340px;
         height: 47px;
-        margin-top: 32px;
+        margin-top: 22px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -885,6 +992,13 @@ body {
     .footer__icons {
         width: 375px;
         height: 143px;
+    }
+    .order-p {
+        order: 1;
+    }
+    .order-div {
+        order: 0;
+        margin-bottom: 40px;
     }
     .footer__icons-brand {
         height: 79px;
