@@ -581,6 +581,12 @@ body {
     margin-top: 16px;
     color: rgb(34, 34, 36);
 }
+.h3 {
+    position: absolute;
+    left: 30px;
+    width: 256px;
+    height: 49px;
+}
 .enter_button {
     width: 100px;
     height: 49px;
@@ -820,7 +826,7 @@ body {
     }
     .burger_menu {
         max-width: 375;
-        left: 135px;
+        left: 115px;
         height: 634px;
     }
     .main {
@@ -880,10 +886,10 @@ body {
         gap: 32px;
     }
     .imgCat {
-        width: 375px;
+        width: 360px;
     }
     .acces {
-        width: 375px;
+        width: 360px;
         height: 111px;
     }
     .cardSect {
@@ -1025,6 +1031,11 @@ body {
         left: 0;
         margin-top: 16px;
         color: rgb(34, 34, 36);
+    }
+    .h3 {
+        left: 20px;
+        width: 190px;
+        height: 29px;
     }
 
 }
